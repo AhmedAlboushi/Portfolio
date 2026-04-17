@@ -1,0 +1,60 @@
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.783);
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.home-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  line-height: 1.2;
+  max-width: 700px;
+}
+
+.title span {
+  color: #38bdf8;
+}
+
+.desc {
+  margin-top: 19px;
+  color: rgba(255, 255, 255, 0.783);
+  max-width: 500px;
+  font-size: 20px;
+}
+
+.buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: #38bdf8;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}

@@ -1,0 +1,113 @@
+.about {
+  width: 100%;
+  padding: 140px 20px;
+}
+
+.about-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* card-like sections */
+.about-block {
+  margin-bottom: 60px;
+  padding: 25px;
+  border-radius: 14px;
+  background: rgba(17, 24, 39, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+}
+
+/* titles */
+.about-title {
+  font-size: 24px;
+  margin-bottom: 18px;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* text */
+.about-text {
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* tech pills */
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tech-grid span {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 15px;
+
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  color: rgba(255, 255, 255, 0.85);
+  transition: 0.2s;
+}
+
+.tech-grid span:hover {
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
+
+/* goals list */
+.goals-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.goals-list li {
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 20px;
+  position: relative;
+}
+
+.goals-list li::before {
+  content: "•";
+  color: #38bdf8;
+  margin-right: 6px;
+}
+.about-intro {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-name {
+  font-size: 37px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+
+.about-summary {
+  text-align: center;
+  padding: 2px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.about-languages {
+  padding: 2px;
+
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+.about-experience {
+  padding: 2px;
+
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}

@@ -1,0 +1,147 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* MODAL */
+.modal {
+  width: min(900px, 92vw);
+  max-height: 90vh;
+  overflow-y: auto;
+
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(15px);
+
+  border-radius: 16px;
+  padding: 20px;
+  color: white;
+}
+
+/* hide scrollbar */
+.modal::-webkit-scrollbar {
+  width: 0;
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+/* MAIN IMAGE */
+.main-image {
+  flex: 1;
+  height: 380px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* THUMBS */
+.thumbs {
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: hidden;
+}
+
+.thumbs img {
+  width: 86px;
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 6px;
+  transition:
+    transform 0.2s ease,
+    border 0.2s ease;
+  flex-shrink: 0;
+}
+
+.thumbs img:hover {
+  transform: scale(1.05); /* safe small scale */
+}
+.thumbs img.active {
+  opacity: 1;
+  border: 2px solid #38bdf8;
+}
+
+/* TEXT */
+.modal-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.modal-description {
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+
+.modal-tech {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.modal-tech span {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+/* CLOSE */
+.modal-close {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #38bdf8;
+  cursor: pointer;
+  font-weight: bold;
+}
+.modal-exit {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: rgba(228, 14, 14, 0.626);
+  color: white;
+
+  font-size: 20px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.2s;
+}
+
+.modal-exit:hover {
+  background: rgb(255, 4, 4);
+  transform: scale(1.1);
+}
+
+.modal-exit {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
